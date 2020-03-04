@@ -21,7 +21,7 @@ class WirecardEE_PaymentGateway_Block_Info extends Mage_Payment_Block_Info
     {
         parent::_construct();
 
-        if ($this->getAction()->getFullActionName() !== 'adminhtml_sales_order_view') {
+        if ($this->getAction() != null && $this->getAction()->getFullActionName() !== 'adminhtml_sales_order_view') {
             $this->setTemplate('WirecardEE/info.phtml');
         }
     }
