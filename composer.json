@@ -16,7 +16,7 @@
     "squizlabs/php_codesniffer": "^2.7",
     "codacy/coverage": "1.4.2"
   },
-  "type": "magento-extension",
+  "type": "magento-module",
   "scripts": {
     "upload-coverage": "codacycoverage clover build/coverage.xml",
     "cs-check": "phpcs --standard=phpcs.xml -s",
